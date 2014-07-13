@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/abs__action_bar_default_height"
+    android:orientation="horizontal"
+    android:background="@drawable/abs__tab_indicator_ab_holo"
+    android:layout_width="0dip"
+    android:layout_weight="1"
+    android:minWidth="80dip"
+    android:gravity="center_horizontal"
+    android:paddingStart="4dip"
+    android:paddingEnd="4dip">
+    <ImageView
+        android:id="@+id/TabIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:id="@+id/TabTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        style="?android:attr/tabWidgetStyle" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="@dimen/abs__action_bar_default_height"
+    android:layout_weight="1"
+    android:layout_marginStart="-3dip"
+    android:layout_marginEnd="-3dip"
+    android:orientation="horizontal"
+    android:background="@drawable/abs__tab_indicator_ab_holo">
+    <ImageView
+        android:id="@+id/TabIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/TabTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/TabIcon"
+        android:textStyle="bold"
+        style="?android:attr/tabWidgetStyle" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+﻿body
+{
+    background-color: rgb(207, 210, 210);
+}
+
+h1, h2
+{
+    margin: 0;
+    color: #666;
+    border-bottom: solid 1px #000000;
+    font-size: 180%;
+}
+
+table
+{
+    float: left;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+td
+{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+div.page
+{
+    background-color: #fff;
+    padding-bottom: 1em;
+    border: 1px solid #000;
+}
+
+div, div.n
+{
+    display: table;
+    vertical-align: bottom;
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
+}
+
+div.s
+{
+    font-size: 85%;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+div.h1
+{
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+div.h2, div.h0, div.h3
+{
+    font-size: 125%;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+div.h3
+{
+    text-align: left;
+}
+
+div.boxed
+{
+    border: 1px solid black;
+}
+
+p.d1, p.d2, p.d3, p.d4
+{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.8em;
+    color: Blue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p.r1, p.r2
+{
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #7f0000;
+    font-weight: bold;
+}
+
+p.c1, p.c2
+{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
