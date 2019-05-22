@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4831832-A75B-4A9A-9939-A34A4364F8A5}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NWTBible</RootNamespace>
+    <AssemblyName>NWTBible</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n>
+    </MandroidI18n>
+    <AndroidLinkSkip />
+    <AndroidUseLatestPlatformSdk />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>..\public.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>administrator</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>Guy</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>administrator</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidLinkSkip />
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <BundleAssemblies>False</BundleAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\ActionBarSherlock.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N" />
+    <Reference Include="I18N.West" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ParseBinding">
+      <HintPath>..\Xamarin.Parse\bin\Release\ParseBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="SlidingMenuBinding">
+      <HintPath>..\SlidingMenuBinding\bin\Release\SlidingMenuBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="StickyGridHeadersBinding">
+      <HintPath>StickyGridHeadersBinding\bin\Release\StickyGridHeadersBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="CanonActivity.cs" />
+    <Compile Include="CanonFragment.cs" />
+    <Compile Include="ChaptersActivity.cs" />
+    <Compile Include="ChaptersFragment.cs" />
+    <Compile Include="CanonGridFragment.cs" />
+    <Compile Include="CanonHeaderGridFragment.cs" />
+    <Compile Include="LogInActivity.cs" />
+    <Compile Include="NotesMenu\HighlightsFragment.cs" />
+    <Compile Include="NotesMenu\FavoritesFragment.cs" />
+    <Compile Include="NotesMenu\NotesFragmentAdvanced.cs" />
+    <Compile Include="PublicationsFragment.cs" />
+    <Compile Include="GoToFragment.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="MagazinesActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="NotesMenu\NoteEditActivity.cs" />
+    <Compile Include="NotesMenu\NotesActivity.cs" />
+    <Compile Include="NotesMenu\NotesDbAdapter.cs" />
+    <Compile Include="NotesMenu\NotesFragment.cs" />
+    <Compile Include="NWTCustomViews.cs" />
+    <Compile Include="NWTClasses.cs" />
+    <Compile Include="NWTObjects.cs" />
+    <Compile Include="ReaderMenu\MenuFragmentAdvanced.cs" />
+    <Compile Include="ReaderMenu\MenuAdapter.cs" />
+    <Compile Include="ReaderMenu\MenuAdvancedFragment.cs" />
+    <Compile Include="ReaderMenu\MenuFragment.cs" />
+    <Compile Include="PreferencesActivity.cs" />
+    <Compile Include="PublicationsActivity.cs" />
+    <Compile Include="ReaderMenu\OldReaderActivity.cs" />
+    <Compile Include="ReaderMenu\ReaderFragment.cs" />
+    <Compile Include="ReaderMenu\ReaderActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchFragment.cs" />
+    <Compile Include="SectionList.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="ReaderMenu\ReaderViewPagerActivity.cs" />
+    <Compile Include="Zip.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\bible.css" />
+    <AndroidAsset Include="Assets\ui\web\verseselection.js" />
+    <AndroidAsset Include="Assets\ui\web\wol.css" />
+    <AndroidAsset Include="Assets\ui\web\Site.css" />
+    <AndroidAsset Include="Assets\ui\web\dt.css" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\Values\Styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\greek.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\hebrew.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\greek.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\hebrew.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\greek.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\hebrew.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\greek.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hebrew.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\search.png" />
+    <AndroidResource Include="Resources\Values\Arrays.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\xml\preferences.xml" />
+    <AndroidResource Include="Resources\Drawable\SlidingMenuShadow.xml" />
+    <AndroidResource Include="Resources\Values\Dimensions.xml" />
+    <AndroidResource Include="Resources\Menu\search_options_menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_search.png" />
+    <AndroidResource Include="Resources\Values\Attrs.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-land\Splash.png" />
+    <AndroidResource Include="Resources\Drawable\webview_border.xml" />
+    <AndroidAsset Include="Assets\languages.xml">
+      <SubType>Designer</SubType>
+    </AndroidAsset>
+    <AndroidResource Include="Resources\Drawable\allscripture.png" />
+    <AndroidResource Include="Resources\Drawable\bearingwitness.png" />
+    <AndroidResource Include="Resources\Drawable\biblestories.png" />
+    <AndroidResource Include="Resources\Drawable\bibleteach.png" />
+    <AndroidResource Include="Resources\Drawable\closetojehovah.png" />
+    <AndroidResource Include="Resources\Drawable\dailytext.png" />
+    <AndroidResource Include="Resources\Drawable\godslove.png" />
+    <AndroidResource Include="Resources\Drawable\Icon_old.png" />
+    <AndroidResource Include="Resources\Drawable\insight.png" />
+    <AndroidResource Include="Resources\Drawable\isaiah1.png" />
+    <AndroidResource Include="Resources\Drawable\isaiah2.png" />
+    <AndroidResource Include="Resources\Drawable\james.png" />
+    <AndroidResource Include="Resources\Drawable\jehovahsday.png" />
+    <AndroidResource Include="Resources\Drawable\jeremiah.png" />
+    <AndroidResource Include="Resources\Drawable\kingdomcome.png" />
+    <AndroidResource Include="Resources\Drawable\knowjehovah.png" />
+    <AndroidResource Include="Resources\Drawable\knowledge.png" />
+    <AndroidResource Include="Resources\Drawable\ministryschool.png" />
+    <AndroidResource Include="Resources\Drawable\myfollower.png" />
+    <AndroidResource Include="Resources\Drawable\reasoning.png" />
+    <AndroidResource Include="Resources\Drawable\revelation.png" />
+    <AndroidResource Include="Resources\Drawable\singtojehovah.png" />
+    <AndroidResource Include="Resources\Drawable\teacher.png" />
+    <AndroidResource Include="Resources\Drawable\worshipgod.png" />
+    <AndroidResource Include="Resources\Drawable\youngpeople1.png" />
+    <AndroidResource Include="Resources\Drawable\youngpeople2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\Menu\highlighting_menu.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\pubs.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\pubs.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\pubs.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\pubs.png" />
+    <AndroidResource Include="Resources\Drawable\jehovahswill.png" />
+    <AndroidResource Include="Resources\Drawable\metro_button_style.xml" />
+    <AndroidResource Include="Resources\Color\metro_button_text_style.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\bible.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\bible.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bible.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bible.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_menu_star.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_star.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_menu_star.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_menu_archive.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_menu_archive.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_archive.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_archive.png" />
+    <AndroidResource Include="Resources\Drawable\tab_indicator.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Ion-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Ion-Book.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Ion-Duel.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Ion-Italic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\verseselection.jsf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\fonts\Ion-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\fonts\Ion-Book.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\fonts\Ion-Duel.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\fonts\Ion-Italic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\BibleBooksListLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Canon.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Chapters.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\DailyText.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Home.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\MagazineItem.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Magazines.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\List.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\PreferencesLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\PublicationGridLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Publications.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Reader.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\SectionHeader.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\MenuFrame.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ContentFrame.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ColorFrame.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ViewPagerLayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ChapterSpinnerListLayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\NoteEdit.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\NotesList.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\NoteRow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\americana-bt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\FragmentContainer.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\MainFragmentsContainer.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\CanonFragment.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\SectionItem.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ListHeader.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\ListItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\MenuFrameSecondary.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\FragmentTabHost.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\GoToFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\DuelReader.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\SectionItem_old.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ui\web\fonts\Garamond-Light.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-land\DuelReader.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\HTMLTextBox.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\HTMLWebView.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\LogIn.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\SearchFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\CanonGrid.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\GridHeader.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\GridItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\BibleBookGridFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\TabIndicator.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\TabIndicator2.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\SearchRow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

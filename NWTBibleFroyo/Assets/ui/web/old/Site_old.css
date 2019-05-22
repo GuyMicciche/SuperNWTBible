@@ -1,0 +1,98 @@
+﻿@font-face {
+	font-family: 'SimSun';
+	src: url('simsun.ttc');	
+}
+
+body, h3, ul, p, p.site a, p.nav a {
+	color: #000;
+	/*font-family: "Arial Unicode MS", Helvetica, "Lucida Sans Unicode", sans-serif;*/
+}
+
+body {
+	background-color: #4bae5e;
+/*	background-color: #a2cfd3;*/
+/*	background-color: #987f4c;*/
+}
+
+h1, h2 {
+	margin: 0;
+/*	padding: 0 10px 1em;*/
+	color: #000000;
+	border-bottom: solid 1px #000000;
+	font-size: 180%;
+}
+
+div.page {
+	background-color: #fff;
+	padding-bottom: 1em;
+/*	width: 600px; */
+	border: 1px solid #000;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    text-indent: 1.3em;	
+}
+
+img {
+	border: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+---------------------------*/
+
+.page {
+    background-color: white;
+    margin: 5px auto 3px auto;
+    /*border: 1px solid #B7B7B7;*/
+    /*border: 1px solid #595959;*/
+}
+
+.main {
+    margin: 8px 4px 8px 4px;
+    min-height: 400px;
+}
+
+.footer {
+    margin: 0px 2px 0px 2px;	
+    font-size: .75em;    
+}
+
+span.simsun {
+	font-family: "SimSun";
+}
+
+/*ORIG*/
+
+br{font-size:10px}
+.green{font-family:Tahoma; font-size:11px;  color:#B0D211}
+.footer1{font-family:Tahoma; font-size:11px;  color:black}
+.footer2{font-family:Tahoma; font-size:12px;  color:black}
+.header1{font-family:Verdana; font-size:14px;  color:black}
+.header2{font-family:Verdana; font-size:14px;  color:black}
+.blue{font-family:Tahoma;font-size:12px;color:#BDBDBD;text-decoration:none}
+.thebold {font-family:Verdana; font-size:11px; font-weight: bold; COLOR: #525252;}
+.btnPinyin{ margin:1px; padding:1px; font-size:15px; background-color:#eee; color:#050; width:19px; height:25px; border:1px solid #555; }
+
+table.ggc
+{
+    page-break-inside:avoid;
+    display:inline;
+    border-collapse:collapse;
+    padding:0;
+}
+td.cgc
+{
+    page-break-inside:avoid;
+    text-align: center;
+    padding: 1px 3px 1px 3px;
+    line-height:1;
+    white-space:nowrap;
+}

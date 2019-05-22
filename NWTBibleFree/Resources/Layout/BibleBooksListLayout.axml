@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nwt="http://schemas.android.com/apk/res/com.gem.nwtbible"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookTitleItem"
+        android:textSize="36sp"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip" />
+    <TextView
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookDetailsItem"
+        android:textSize="18sp"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip" />
+</LinearLayout>

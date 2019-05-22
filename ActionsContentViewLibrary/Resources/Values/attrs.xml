@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Default spacing types. -->
+  <attr name="spacing_type">
+
+    <!-- Spacing will be calculated as offset from right bound of view. -->
+    <enum name="right_offset" value="0" />
+    <!-- Spacing will be calculated as right bound of actions container. -->
+    <enum name="actions_width" value="1" />
+  </attr>
+
+  <!-- Default fade types. -->
+  <attr name="fade_type">
+
+    <!-- Fade is disabled. -->
+    <enum name="none" value="0" />
+    <!-- Fade applies to actions container. -->
+    <enum name="actions" value="1" />
+    <!-- Fade applies to content container. -->
+    <enum name="content" value="2" />
+    <!-- Fade applies to every container. -->
+    <enum name="both" value="3" />
+  </attr>
+
+  <!-- Enabled effects. -->
+  <attr name="effects">
+
+    <!-- None. -->
+    <enum name="none" value="0" />
+    <!-- Scroll opening. -->
+    <enum name="scroll_opening" value="1" />
+    <!-- Scroll closing. -->
+    <enum name="scroll_closing" value="2" />
+    <!-- Scroll effects. -->
+    <enum name="scroll" value="3" />
+    <!-- Fling opening. -->
+    <enum name="fling_opening" value="4" />
+    <!-- Fling closing. -->
+    <enum name="fling_closing" value="8" />
+    <!-- Fling effects. -->
+    <enum name="fling" value="12" />
+    <!-- All (Opening and Closing). -->
+    <enum name="all" value="15" />
+  </attr>
+
+  <!-- Default swiping types. -->
+  <attr name="swiping_type">
+
+    <!-- Swiping will be handled at any point of screen. -->
+    <enum name="full" value="0" />
+    <!-- Swiping will be handled starting from screen edge only. -->
+    <enum name="edge" value="1" />
+  </attr>
+
+  <declare-styleable name="ActionsContentView">
+
+    <!-- Spacing type. -->
+    <attr name="spacing_type" />
+    <!-- Spacing value. -->
+    <attr name="spacing" format="dimension" />
+    <!-- Spacing value for actions container. -->
+    <attr name="actions_spacing" format="dimension" />
+    <!-- Actions layout ID to link at view creation time. -->
+    <attr name="actions_layout" format="reference" />
+    <!-- Content layout ID to link at view creation time. -->
+    <attr name="content_layout" format="reference" />
+    <!-- Drawable to be used to draw shadow dropped by content view to actions one. -->
+    <attr name="shadow_drawable" format="reference" />
+    <!-- Shadow width. -->
+    <attr name="shadow_width" format="dimension" />
+    <!-- Fade type. -->
+    <attr name="fade_type" />
+    <!-- Max fade value. -->
+    <attr name="fade_max_value" format="integer" />
+    <!-- Indicates how long flinging will take time in milliseconds. -->
+    <attr name="fling_duration" format="integer" />
+    <!-- Swiping type. -->
+    <attr name="swiping_type" />
+    <!-- Swiping edge width. -->
+    <attr name="swiping_edge_width" format="dimension" />
+    <!-- Enabled effects. -->
+    <attr name="effects" />
+    <!-- Actions layout effect. -->
+    <attr name="effect_actions" format="reference" />
+    <!-- Content layout effect. -->
+    <attr name="effect_content" format="reference" />
+    <!-- Effects interpolator -->
+    <attr name="effects_interpolator" format="reference" />
+  </declare-styleable>
+
+</resources>

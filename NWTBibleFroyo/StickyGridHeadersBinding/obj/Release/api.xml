@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.tonicartos.widget.stickygridheaders">
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapter" static="false" visibility="public">
+<implements name="android.widget.ListAdapter" name-generic-aware="android.widget.ListAdapter">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCountForHeader" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNumHeaders" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="StickyGridHeadersBaseAdapterWrapper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView">
+</parameter>
+<parameter name="p2" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<exception name="ArrayIndexOutOfBoundsException" type="java.lang.ArrayIndexOutOfBoundsException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWrappedAdapter" native="false" return="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNumColumns" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="translatePosition" native="false" return="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.Position" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateCount" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="true" name="ID_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="-2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ID_HEADER" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ID_HEADER_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="-3" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSITION_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSITION_HEADER" static="true" transient="false" type="int" type-generic-aware="int" value="-2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSITION_HEADER_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="-3" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIEW_TYPE_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIEW_TYPE_HEADER" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIEW_TYPE_HEADER_FILLER" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="false" name="StickyGridHeadersBaseAdapterWrapper.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="StickyGridHeadersBaseAdapterWrapper.FillerView" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.FillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.FillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.FillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.FillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+<parameter name="p2" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.FillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.FillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+<parameter name="p2" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMeasureTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+<parameter name="p2" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.HeaderFillerView" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+<parameter name="p2" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeaderId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderHolder" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.HeaderHolder" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.HeaderHolder" visibility="protected">
+</constructor>
+<field deprecated="not deprecated" final="false" name="mHeaderView" static="false" transient="false" type="android.view.View" type-generic-aware="android.view.View" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersBaseAdapterWrapper.Position" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersBaseAdapterWrapper.Position" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper.Position" visibility="protected">
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="mHeader" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mPosition" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.GridView" extends-generic-aware="android.widget.GridView" final="false" name="StickyGridHeadersGridView" static="false" visibility="public">
+<implements name="android.widget.AbsListView.OnScrollListener" name-generic-aware="android.widget.AbsListView.OnScrollListener">
+</implements>
+<implements name="android.widget.AdapterView.OnItemClickListener" name-generic-aware="android.widget.AdapterView.OnItemClickListener">
+</implements>
+<implements name="android.widget.AdapterView.OnItemLongClickListener" name-generic-aware="android.widget.AdapterView.OnItemLongClickListener">
+</implements>
+<implements name="android.widget.AdapterView.OnItemSelectedListener" name-generic-aware="android.widget.AdapterView.OnItemSelectedListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersGridView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersGridView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersGridView" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="areHeadersSticky" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderAt" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStickiedHeader" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStickyHeaderIsTranscluent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemLongClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onNothingSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScroll" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScrollStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performHeaderClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performHeaderLongPress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAreHeadersSticky" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeadersIgnorePadding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnHeaderClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.OnHeaderClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnHeaderLongClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.OnHeaderLongClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStickyHeaderIsTranscluent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="TOUCH_MODE_DONE_WAITING" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCH_MODE_DOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCH_MODE_FINISHED_LONG_PRESS" static="true" transient="false" type="int" type-generic-aware="int" value="-2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCH_MODE_REST" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCH_MODE_TAP" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mAdapter" static="false" transient="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper" type-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapterWrapper" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mDataChanged" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMotionHeaderPosition" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mPendingCheckForLongPress" static="false" transient="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.CheckForHeaderLongPress" type-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.CheckForHeaderLongPress" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mPendingCheckForTap" static="false" transient="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.CheckForHeaderTap" type-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.CheckForHeaderTap" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mTouchMode" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="false" name="StickyGridHeadersGridView.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersGridView.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersGridView.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.WindowRunnable" extends-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.WindowRunnable" final="false" name="StickyGridHeadersGridView.CheckForHeaderLongPress" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="StickyGridHeadersGridView.CheckForHeaderTap" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyGridHeadersGridView.OnHeaderClickListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onHeaderClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyGridHeadersGridView.OnHeaderLongClickListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onHeaderLongClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.WindowRunnable" extends-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.WindowRunnable" final="false" name="StickyGridHeadersGridView.PerformHeaderClick" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" extends-generic-aware="java.lang.RuntimeException" final="false" name="StickyGridHeadersGridView.RuntimePlatformSupportException" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersGridView.RuntimePlatformSupportException" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.RuntimePlatformSupportException" visibility="public">
+<parameter name="p1" type="java.lang.Exception">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View.BaseSavedState" extends-generic-aware="android.view.View.BaseSavedState" final="false" name="StickyGridHeadersGridView.SavedState" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersGridView.SavedState" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.SavedState" visibility="public">
+<parameter name="p0" type="android.os.Parcelable">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.SavedState&gt;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersGridView.SavedState.1" static="false" visibility="">
+<implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView.SavedState&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersGridView.WindowRunnable" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="rememberWindowAttachCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sameWindow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="StickyGridHeadersListAdapterWrapper" static="false" visibility="public">
+<implements name="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter" name-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersListAdapterWrapper" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersListAdapterWrapper" visibility="public">
+<parameter name="p0" type="android.widget.ListAdapter">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCountForHeader" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumHeaders" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="false" name="StickyGridHeadersListAdapterWrapper.1" static="false" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleAdapter" static="false" visibility="public">
+<implements name="android.widget.ListAdapter" name-generic-aware="android.widget.ListAdapter">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="StickyGridHeadersSimpleAdapterWrapper" static="false" visibility="public">
+<implements name="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter" name-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersBaseAdapter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleAdapterWrapper" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleAdapterWrapper" visibility="public">
+<parameter name="p0" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleAdapter">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCountForHeader" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumHeaders" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="true" name="StickyGridHeadersSimpleAdapterWrapper.DataSetObserverExtension" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersSimpleAdapterWrapper.HeaderData" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleAdapterWrapper.HeaderData" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleAdapterWrapper.HeaderData" visibility="public">
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRefPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="incrementCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="StickyGridHeadersSimpleArrayAdapter" static="false" visibility="public">
+<typeParameters>
+<typeParameter name="T"/>
+</typeParameters>
+<implements name="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleAdapter" name-generic-aware="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleAdapter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleArrayAdapter" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleArrayAdapter" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="T[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleArrayAdapter" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleArrayAdapter" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;T&gt;">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="TAG" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersSimpleArrayAdapter.HeaderViewHolder" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleArrayAdapter.HeaderViewHolder" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleArrayAdapter.HeaderViewHolder" visibility="protected">
+</constructor>
+<field deprecated="not deprecated" final="false" name="textView" static="false" transient="false" type="android.widget.TextView" type-generic-aware="android.widget.TextView" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyGridHeadersSimpleArrayAdapter.ViewHolder" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="StickyGridHeadersSimpleArrayAdapter.ViewHolder" static="false" type="com.tonicartos.widget.stickygridheaders.StickyGridHeadersSimpleArrayAdapter.ViewHolder" visibility="protected">
+</constructor>
+<field deprecated="not deprecated" final="false" name="textView" static="false" transient="false" type="android.widget.TextView" type-generic-aware="android.widget.TextView" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_bg"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/mainButton"
+            style="@style/HoloButton.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_menu_moreoverflow_normal_holo_light" />
+        <View
+            android:layout_width="@dimen/divider_size"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider" />
+        <Button
+            android:id="@+id/sourceCodeButton"
+            style="@style/HoloButton.Borderless"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/link_to_sources"
+            android:textColor="@color/bottom_bar_text" />
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_above="@id/bottomBar"
+        android:background="@color/divider" />
+    <shared.ui.actionscontentview.ActionsContentView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionsContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider"
+        app:actions_layout="@layout/actions"
+        app:actions_spacing="@dimen/actions_spacing"
+        app:content_layout="@layout/content"
+        app:fade_max_value="@integer/default_pref_fade_max_value"
+        app:fade_type="actions"
+        app:fling_duration="@integer/default_pref_fling_delay"
+        app:shadow_drawable="@drawable/shadow"
+        app:shadow_width="@dimen/default_pref_shadow_width" />
+</RelativeLayout>

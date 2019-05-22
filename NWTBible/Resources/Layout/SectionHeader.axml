@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0079a6">
+<!-- GROUP HEADER ROW -->
+    <TextView
+        android:text="Hello"
+        android:id="@+id/headerText"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dip"
+        android:padding="8dp"
+        android:textColor="#fff" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<!--
+  Copyright 2012 Steven Rudenko
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">ActionsContentView Example</string>
+    <string name="link_to_sources">source code is here &#187;</string>
+    <string name="about_details"><b>ActionsContentView</b> is an standalone library implements actions/content swiping view (AKA Side Navigation UI Pattern, AKA Facebook side menu). The library doesn\'t use any specific code introduced in new Android SDK versions. This allows develop an application with an action/content swiping view for every version of Android from 2.2 and up.\n\nThis application shows abilities of the library and allows you to play with some values of ActionsContentView control.</string>
+    <string name="about_play">Play in sandbox</string>
+    <string name="about_tutorial">View tutorial page</string>
+    <!-- Setting strings -->
+    <string name="pref_spacing">Spacing settings</string>
+    <string name="pref_spacing_type">Spacing type</string>
+    <string name="pref_spacing_width">Spacing width</string>
+    <string name="pref_spacing_actions">Actions spacing width</string>
+    <string name="pref_shadow">Shadow settings</string>
+    <string name="pref_show_shadow">Show shadow</string>
+    <string name="pref_shadow_width">Shadow width</string>
+    <string name="pref_fade">Fade settings</string>
+    <string name="pref_fade_type">Fade type</string>
+    <string name="pref_fade_max_value">Fade max value</string>
+    <string name="pref_swiping">Swiping settings</string>
+    <string name="pref_swiping_type">Swiping type</string>
+    <string name="pref_swiping_edge_width">Swiping edge width</string>
+    <string name="pref_other">Other</string>
+    <string name="pref_other_fling_duration">Fling duration</string>
+    <!-- Action titles -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_sandbox">Sandbox</string>
+    <string name="action_effects">Effects</string>
+    <string name="action_bookmarks">Bookmarks</string>
+    <!-- Effects -->
+    <string name="effect_parallax">Parallax</string>
+    <string name="effect_replace">Replace</string>
+    <string name="effect_alpha">Alpha</string>
+    <string name="effect_duration">Duration</string>
+    <string name="effect_bounce">Bounce</string>
+    <string name="effect_overshot">Overshot</string>
+    <!-- Effects content strings -->
+    <string name="effect_content_actions_xml">Actions effect animation XML</string>
+    <string name="effect_content_content_xml">Content effect animation XML</string>
+
+</resources>

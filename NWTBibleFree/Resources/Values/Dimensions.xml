@@ -1,0 +1,11 @@
+﻿<resources>
+  <dimen name="SlidingmenuOffset">60dp</dimen>
+  <dimen name="SlidingMenuShadowWidth">15dp</dimen>
+  <dimen name="SlidingMenuListPadding">1dp</dimen>
+
+  <color name="red">#900</color>
+  <color name="green">#090</color>
+  <color name="blue">#009</color>
+  <color name="white">#FFF</color>
+  <color name="black">#000</color>
+</resources>

@@ -1,0 +1,4 @@
+C:\Users\Guy\Desktop\Desktop Storehouse\NWTBible\NWTBibleFroyo\StickyGridHeadersBinding\bin\Release\StickyGridHeadersBinding.dll
+C:\Users\Guy\Desktop\Desktop Storehouse\NWTBible\NWTBibleFroyo\StickyGridHeadersBinding\bin\Release\StickyGridHeadersBinding.pdb
+C:\Users\Guy\Desktop\Desktop Storehouse\NWTBible\NWTBibleFroyo\StickyGridHeadersBinding\obj\Release\StickyGridHeadersBinding.dll
+C:\Users\Guy\Desktop\Desktop Storehouse\NWTBible\NWTBibleFroyo\StickyGridHeadersBinding\obj\Release\StickyGridHeadersBinding.pdb

@@ -1,0 +1,206 @@
+﻿p {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family:"Helvetica Neue", Helvetica, sans-serif, Arial, Geneva, 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic Pro W4', 'Hiragino Maru Gothic Pro', 'メイリオ', 'Mayryo', 'ＭＳ Ｐゴシック', 'MS PGothic';
+}
+
+div.body {
+	background-color: #fff;
+/*	padding-bottom: 1em;*/
+/*	width: 600px; */
+	border: 1px solid #000;
+    display: block;
+/*    font-size: 1em;*/
+    text-align: justify	
+}
+.calibre {
+	background-color: rgb(204, 204, 204);
+}
+a {
+	text-decoration:none;
+	color:#4477a1
+}
+a:not(ni):hover {
+	color:#4477a1;
+	text-decoration:underline
+}
+#documentContainer
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h1 {
+	font-size:2em;
+	color:#666;
+	font-weight:normal;
+	padding-bottom:.5em
+}
+h2 {
+	font-size:1.5em;
+	color:#65605e;
+	padding-bottom:.4em;
+	font-weight:normal
+}
+.document {
+	margin-bottom:10px
+}
+.document p {
+	margin:0;
+	padding:0
+}
+.document .sa {
+	margin:.5em 0 1em
+}
+.document .sb {
+	margin:0 0;
+	text-indent:1em
+}
+.document .sd {
+	margin:.2em 0
+}
+.document .se {
+	margin:.5em 0 .2em
+}
+.document .sf {
+	margin:.5em 0;
+	padding-left:1.5em;
+	text-indent:-1.5em
+}
+.document .si {
+	margin:.5em 0;
+	padding-left:2em
+}
+.document .sl {
+	margin:.2em 0;
+	padding-left:4em;
+	text-indent:-4em
+}
+.document .sk {
+	margin:.3em 0;
+	padding-left:2em;
+	text-indent:-1em
+}
+.document .sm {
+	margin:.5em 0
+}
+.document .sn {
+	margin:.5em 0
+}
+.document .so {
+	margin:.2em 0
+}
+.document .sp {
+	margin:.2em 0;
+	padding-left:2em;
+	text-indent:-1em
+}
+.document .sq {
+	margin:.3em 0;
+	padding-left:3em;
+	text-indent:-3em
+}
+.document .ss {
+	text-align:center;
+	font-size:1.2em;
+	font-weight:200;
+	margin:1.2em 0 .5em
+}
+.document .st, .document .ct {
+	font-size:1.7em;
+	text-align:center;
+	font-weight:200;
+	margin:0 0 20px
+}
+.document .su {
+	margin:.3em 0;
+	padding-left:1.5em;
+	text-indent:-1.5em
+}
+.document .sv {
+	margin:.3em 0;
+	padding-left:4.5em;
+	text-indent:-1.5em
+}
+.document .sw {
+	margin:1em 0 .5em 0;
+	font-size:.8em;
+	font-style:italic;
+	text-align:center
+}
+.document .sx {
+	padding-left:4.5em;
+	text-indent:-4.5em
+}
+.document .sx a:first-child {
+	padding-right:.5em
+}
+.document .sz {
+	margin:.2em 0;
+	padding-left:4em;
+	text-indent:-1.5em
+}
+.document .dc {
+}
+.document .dv {
+}
+.document .fn {
+	font-size:.8em;
+	font-weight:700;
+	padding:0 3px 0 1px;
+	vertical-align:top
+}
+.document .mr {
+	font-size:.8em;
+	font-weight:700;
+	padding-right:3px;
+	vertical-align:top
+}
+.document sup {
+	font-size:.75em;
+	vertical-align:top
+}
+.document sub {
+	font-size:.75em;
+	vertical-align:bottom
+}
+.document span.alt {
+	font-size:.75em
+}
+.document a {
+	text-decoration:none
+}
+.document a:hover {
+	text-decoration:underline
+}
+.document .ni {
+	text-decoration:none;
+	color:gray
+}
+.document .hl {
+	color:#1d377a
+}
+.document .mk {
+	color:#000;
+	background-color:#ffe87c;
+	padding:.1em
+}
+.document .mkhl {
+	background-color:#ffa500
+}
+.document .pg {
+	display:none
+}
+.document .west {
+	float:left
+}
+.document .east {
+	float:right
+}
+.document a img {
+	border:1px solid #fff
+}
+.document a img:hover {
+	border:1px solid #ffa500
+}
+.document i {
+}

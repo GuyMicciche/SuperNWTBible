@@ -1,0 +1,13 @@
+<metadata>
+
+  <attr path="/api/package[@name='com.parse']" name="managedName">Xamarin.Parse</attr>
+  
+  <attr path="/api/package[@name='com.parse.codec.net']/class[@name='RFC1522Codec']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.parse']/class[@name='ParseCallback']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.parse']/class[@name='Binary']" name="visibility">public</attr>
+  
+  <remove-node path="/api/package[starts-with(@name, 'com.parse.signpost')]" />
+  <remove-node path="/api/package[starts-with(@name, 'com.parse.codec')]" />
+
+
+</metadata>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Global Settings">
+        <ListPreference
+            android:title="Theme Style"
+            android:summary="Choose a theme style: Dark or Light"
+            android:key="listThemeStyle"
+            android:entries="@array/themeStyles"
+            android:entryValues="@array/themeStyles"
+            android:defaultValue="Theme Holo Dark" />
+        <CheckBoxPreference
+            android:key="topNavController"
+            android:title="Navigation Controller"
+            android:defaultValue="true"
+            android:summary="Show the navigation controller when viewing content. This allows for quick navigation when viewing chapters." />
+        <CheckBoxPreference
+            android:key="dualWebviews"
+            android:title="Dual Readers"
+            android:defaultValue="false"
+            android:summary="Show the second reader screen." />
+        <ListPreference
+            android:title="Second Language"
+            android:summary="Choose a language"
+            android:key="listSecondLanguage"
+            android:enabled="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Reader Settings">
+        <ListPreference
+            android:title="Font Size"
+            android:summary="Choose a font size"
+            android:key="listFontSize"
+            android:entries="@array/readerFontSizes"
+            android:entryValues="@array/readerFontSizes"
+            android:defaultValue="Standard" />
+        <ListPreference
+            android:title="Reader Navigation"
+            android:summary="Choose between swiping pages to navigate, or selecting chapter numbers to navigate."
+            android:key="listReaderNavigation"
+            android:entries="@array/readerType"
+            android:entryValues="@array/readerType"
+            android:defaultValue="Selecting Navigation" />
+        <CheckBoxPreference
+            android:key="bibleReferences"
+            android:title="Show Bible references and footnotes"
+            android:defaultValue="false"
+            android:summary="Show references and footnotes markings in the Bible. Disables highlighting." />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Recording Notes">
+        <CheckBoxPreference
+            android:key="notesReplace"
+            android:title="Notes Replace TOC"
+            android:defaultValue="false"
+            android:summary="Checked means your notes appear left in the reader. Unchecked means table of contents appear left in the reader." />
+        <CheckBoxPreference
+            android:key="allowHighlighting"
+            android:title="Allow Highlighting"
+            android:defaultValue="true"
+            android:summary="Checked means you can highlight scriptures and or add to notes. Unchecked means no highlighting." />
+        <CheckBoxPreference
+            android:key="recordEveryHighlight"
+            android:title="Record Every Highlight"
+            android:defaultValue="true"
+            android:summary="Checked means the reader remembers everything you highlight. Unchecked means the reader will not remember any highlight." />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Donations">
+        <NWTBible.DonateDialogPreference
+            android:key="donatePreference"
+            android:title="Donate"
+            android:summary="If you would like to donate to this project, you can through either PayPal or Google Wallet."
+            android:dialogTitle="Donate"
+            android:dialogMessage="How would you like to donate to the NWT Bible project?" />
+    </PreferenceCategory>
+<!--<PreferenceCategory
+        android:title="Reader Settings">
+        <PreferenceScreen
+            android:title="Advanced Options"
+            android:key="advancedOptions"
+            android:summary="Advanced options in another screen">
+            <CheckBoxPreference
+                android:key="advancedOption"
+                android:title="Advanced Option"
+                android:defaultValue="true"
+                android:summary="This is an Advanced Option" />
+        </PreferenceScreen>
+        <EditTextPreference
+            android:dialogTitle="EditTextTitle"
+            android:dialogMessage="Please enter your Text:"
+            android:key="mainOption"
+            android:title="Some Title"
+            android:summary="This is an EditText Preference"
+            android:defaultValue="Test" />
+    </PreferenceCategory>-->
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<metadata>
+  <attr path="/api/package[@name='com.jeremyfeinstein.slidingmenu.lib']" name="managedName">SlidingMenuBinding.Lib</attr>
+  <attr path="/api/package[@name='com.jeremyfeinstein.slidingmenu.lib.app']" name="managedName">SlidingMenuBinding.Lib.App</attr>
+
+  <add-node path="/api/package[@name='com.jeremyfeinstein.slidingmenu.lib']/class[@name='SlidingMenu']">
+    <!-- 
+		We need this transform because the Java method setBehindCanvasTransformer can't be bound. The binding 
+		generator can't find the type com.slidingmenu.lib.R cannot be found. As a workaround we tell 
+		the binding generator to bind this method.
+		
+		See: http://forums.xamarin.com/discussion/comment/2868 
+		-->
+    <method abstract="false" deprecated="not deprecated" final="false" name="setBehindCanvasTransformer" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="t" type="com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.CanvasTransformer" />
+    </method>
+  </add-node>
+</metadata>
